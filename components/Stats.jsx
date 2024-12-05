@@ -2,6 +2,11 @@
 
 import CountUp from "react-countup";
 
+import ServicePage from '../app/services/page'
+import ResumePage from '../app/resume/page'
+import WorkPage from '../app/work/page'
+import ContactPage from '../app/contact/page'
+
 const stats = [
   {
     num: 5,
@@ -50,6 +55,14 @@ const Stats = () => {
           })}
         </div>
       </div>
+          <div className="mt-6">
+            <div>
+            <ServicePage />
+          <ResumePage />
+          <WorkPage />
+          <ContactPage />
+            </div>
+          </div>
     </section>
   );
 };
