@@ -28,7 +28,7 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
+    <section className="pt-4 pb-12 xl:pt-0 xl:pb-0 mb-4">
       <div className="container mx-auto">
         <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
           {stats.map((item, index) => {
@@ -68,6 +68,10 @@ const Stats = () => {
   <ServicePage />
 </div>
 
+<div>
+  <ResumePage />
+</div>
+
 
 {/* Work Section */}
 <div className="mt-8">
@@ -79,7 +83,7 @@ const Stats = () => {
 
 {/* Divider */}
 <div className="flex justify-center ">
-  <div className="border-t border-accent opacity-50 animate-reversedWidth"></div>
+  <div className="border-t opacity-50 animate-reversedWidth"></div>
 </div>
 
 {/* Add a <style> tag for @keyframes */}
