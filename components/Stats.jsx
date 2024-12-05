@@ -55,22 +55,64 @@ const Stats = () => {
           })}
         </div>
       </div>
-      <div className="mt-6">
-        <div>
-          <div className="mt-4">
-            <ServicePage />
-          </div>
-          <div className="mt-4">
-            <ResumePage />
-          </div>
-          <div className="mt-4">
-            <WorkPage />
-          </div>
-          <div className="mt-4">
-            <ContactPage />
-          </div>
-        </div>
-      </div>
+      {/* Divider */}
+      <div className="flex justify-center mt-8">
+  <div className="border-t border-accent opacity-50 animate-reversedWidth"></div>
+</div>
+
+{/* Service Section */}
+<div className="mt-8">
+  <h2 className="text-4xl font-bold text-accent mb-6 text-center mt-2">
+    My Services
+  </h2>
+  <ServicePage />
+</div>
+
+
+{/* Work Section */}
+<div className="mt-8">
+  <h2 className="text-4xl font-bold text-accent mb-6 text-center ">
+    My Work
+  </h2>
+  <WorkPage />
+</div>
+
+{/* Divider */}
+<div className="flex justify-center ">
+  <div className="border-t border-accent opacity-50 animate-reversedWidth"></div>
+</div>
+
+{/* Add a <style> tag for @keyframes */}
+<style jsx>{`
+  @keyframes reversedWidth {
+    0% {
+      width: 50%;
+    }
+    50% {
+      width: 40%;
+    }
+    100% {
+      width: 30%;
+    }
+  }
+
+  .animate-reversedWidth {
+    animation: reversedWidth 5s infinite ease-in-out;
+  }
+`}</style>
+
+
+
+
+
+{/* Contact Section */}
+<div className="mt-8 mb-3">
+  <h2 className="text-4xl font-bold text-accent mb-6 text-center ">
+    Contact Me
+  </h2>
+  <ContactPage />
+</div>
+
     </section>
   );
 };
