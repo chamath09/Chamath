@@ -56,7 +56,7 @@ const Stats = () => {
         </div>
       </div>
       {/* Divider */}
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-12">
   <div className="border-t border-accent opacity-50 animate-reversedWidth"></div>
 </div>
 
