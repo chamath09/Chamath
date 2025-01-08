@@ -68,13 +68,15 @@ const Stats = () => {
   <ServicePage />
 </div>
 
-<div>
+<div className="mt-4 lg:mt-12">
   <ResumePage />
 </div>
 
 
+
+
 {/* Work Section */}
-<div className="mt-8">
+<div className="mt-6 lg:mt-8">
   <h2 className="text-4xl font-bold text-accent mb-6 text-center ">
     My Work
   </h2>

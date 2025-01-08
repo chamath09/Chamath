@@ -5,10 +5,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
-import ServicePage from "./services/page.jsx"
-import ResumePage from "./resume/page.jsx"
-import WorkPage from "./work/page.jsx"
-import ContactPage from "./contact/page.jsx"
 
 const jetBrainsMono = JetBrains_Mono({ 
   subsets: ["latin"], 
