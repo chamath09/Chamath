@@ -58,10 +58,25 @@ const projects = [
     title: "project 3",
     description:
       "Restaura is a user-friendly app that allows easy restaurant bookings, menu browsing, and seamless order management.",
-    stack: [{ name: "React Js" }, { name: "Tailwind CSS" }, { name: "Javascript" }],
-    image: "/assets/work/thumb3.png",
+    stack: [
+      { name: "React Js" },
+      { name: "Tailwind CSS" },
+      { name: "Javascript" },
+    ],
+    image: "/assets/work/image.png",
     live: "https://restaura-blue.vercel.app/",
     github: "https://github.com/chamath09/Restaura-React-landing-page.git",
+  },
+  {
+    num: "04",
+    category: "frontend",
+    title: "project 3",
+    description:
+      "BookFair is an interactive app that allows users to explore, discover, and purchase books at virtual fairs.",
+    stack: [{ name: "HTML 05" }, { name: "CSS" }, { name: "Javascript" }],
+    image: "/assets/work/image2.png",
+    live: "https://book-fair-eta.vercel.app/",
+    github: "https://github.com/chamath09/Book-search-app.git",
   },
 ];
 
