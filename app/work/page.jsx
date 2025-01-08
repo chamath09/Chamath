@@ -22,36 +22,46 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Full-stack",
     title: "project 1",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque vel harum ipsam perspiciatis sit. Vitae!",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "Vibeflix is a dynamic streaming app offering personalized content, seamless navigation, and an engaging user experience.",
+    stack: [
+      { name: "Next Js" },
+      { name: "Tailwind CSS" },
+      { name: "Javascript" },
+    ],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://vibeflix-mu.vercel.app/",
+    github: "https://github.com/chamath09/React-movie-app.git",
   },
   {
     num: "02",
-    category: "frontend",
+    category: "full-stack",
     title: "project 2",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque vel harum ipsam perspiciatis sit. Vitae!",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+      "AI-Travel-Planner is an intelligent app that personalizes travel itineraries, offering smart suggestions and efficient planning.",
+    stack: [
+      { name: "Nerxt Js" },
+      { name: "Tailwind CSS" },
+      { name: "Javascript" },
+      { name: "Gemini AI" },
+      { name: "Firebase" },
+    ],
+    image: "/assets/work/landing.png",
+    live: "https://ai-travel-p-lanner.vercel.app/",
+    github: "https://github.com/chamath09/AI-Travel-PLanner.git",
   },
   {
     num: "03",
     category: "frontend",
     title: "project 3",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque vel harum ipsam perspiciatis sit. Vitae!",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "Restaura is a user-friendly app that allows easy restaurant bookings, menu browsing, and seamless order management.",
+    stack: [{ name: "React Js" }, { name: "Tailwind CSS" }, { name: "Javascript" }],
     image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    live: "https://restaura-blue.vercel.app/",
+    github: "https://github.com/chamath09/Restaura-React-landing-page.git",
   },
 ];
 
@@ -146,7 +156,7 @@ const Work = () => {
                     {/* overplay */}
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     {/* image */}
-                    <div className="relative w-full h-full">
+                    <div className="relative w-full h-full rounded-lg">
                       <Image src={project.image} fill className="object-cover" alt="images"/>
                     </div>
                   </div>

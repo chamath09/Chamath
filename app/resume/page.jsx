@@ -7,8 +7,21 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaGit,
+  FaGithub,
+  FaFire,
+  FaAws,
+  FaPython,
+  FaDocker,
+  FaLinux,
+  FaJenkins,
+  FaJira,
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+import { SiMongodb, SiExpress, SiGooglecloud } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
+import { BiLogoGoLang } from "react-icons/bi";
 
 // about data
 const about = {
@@ -29,8 +42,8 @@ const about = {
       fieldValue: "5+ Years",
     },
     {
-      fieldName: "Skype",
-      fieldValue: "chama.01",
+      fieldName: "Linkedin",
+      fieldValue: "chamat upeka",
     },
     {
       fieldName: "Nationality",
@@ -59,35 +72,21 @@ const experience = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis laboriosam veniam eos quo.",
   items: [
     {
-      company: "Tech Solutions",
+      company: "Fiverr",
       position: "Full Stack Developer",
-      duration: "2022 - Present",
+      duration: "2020 - Present",
     },
     {
       company: "Tech Design",
       position: "Front End Developer",
-      duration: "summer 2021",
+      duration: "2021 - 2022",
     },
     {
       company: "E-commerce Startup",
       position: "Backend Developer",
       duration: "2020-2021",
     },
-    {
-      company: "Tech academy",
-      position: "teaching assistance",
-      duration: "2019-2020",
-    },
-    {
-      company: "Tech academy",
-      position: "teaching assistance",
-      duration: "2019-2020",
-    },
-    {
-      company: "Tech academy",
-      position: "teaching assistance",
-      duration: "2019-2020",
-    },
+
   ],
 };
 
@@ -99,29 +98,24 @@ const education = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis laboriosam veniam eos quo.",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Sftware Engineer Undergraduate",
+      institution: "FOT-USJP",
+      degree: "SOftware Engineer Undergraduate",
       duration: "2022-present",
     },
     {
       institution: "DP Education",
-      degree: "Sftware Engineer Undergraduate",
-      duration: "2022-present",
+      degree: "Full-Stack Developer",
+      duration: "2022-2023",
     },
     {
       institution: "Coursera",
-      degree: "Sftware Engineer Undergraduate",
+      degree: "Devops Engineer",
       duration: "2022-present",
     },
     {
-      institution: "Rajapaksha Central collage",
-      degree: "Sftware Engineer Undergraduate",
-      duration: "2022-present",
-    },
-    {
-      institution: "D.A Rajapaksha Collage",
-      degree: "Sftware Engineer Undergraduate",
-      duration: "2022-present",
+      institution: "University of Moratuwa",
+      degree: "Python Programming",
+      duration: "2022-2023",
     },
   ],
 };
@@ -163,6 +157,70 @@ const skills = {
     {
       icon: <FaNodeJs />,
       name: "node.js",
+    },
+    {
+      icon: <FaGit />,
+      name: "Git",
+    },
+    {
+      icon: <FaGithub />,
+      name: "GitHub",
+    },
+    {
+      icon: <TbBrandReactNative />,
+      name: "React Native",
+    },
+    {
+      icon: <BiLogoGoLang />,
+      name: "Golang",
+    },
+    {
+      icon: <FaFire />,
+      name: "Firebase",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+    },
+    {
+      icon: <SiExpress />,
+      name: "Express.js",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+    },
+    {
+      icon: <SiGooglecloud />,
+      name: "Google Cloud",
+    },
+    {
+      icon: <VscAzure />,
+      name: "Azure",
+    },
+    {
+      icon: <FaAws />,
+      name: "AWS",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <FaDocker />,
+      name: "Docker",
+    },
+    {
+      icon: <FaLinux />,
+      name: "Linux",
+    },
+    {
+      icon: <FaJenkins />,
+      name: "Jenkins",
+    },
+    {
+      icon: <FaJira />,
+      name: "Jira",
     },
   ],
 };
@@ -277,13 +335,14 @@ const resume = () => {
                   </p>
                 </div>
               </div>
-              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px] mt-[30px]">
+              <ScrollArea className="h-[400px]">
+              <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 xl:gap-[30px] mt-[30px]">
                 {skills.skillList.map((skill, index) => {
                   return (
                     <li key={index}>
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                          <TooltipTrigger className="w-full h-[100px] bg-[#232329] rounded-xl flex justify-center items-center group">
                             <div className="text-6xl group-hover:text-accent transition-all duration-300">
                               {skill.icon}
                             </div>
@@ -297,6 +356,7 @@ const resume = () => {
                   );
                 })}
               </ul>
+              </ScrollArea>
             </TabsContent>
 
             {/* about */}

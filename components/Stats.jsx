@@ -13,7 +13,7 @@ const stats = [
     text: "Years of experience",
   },
   {
-    num: 10,
+    num: 15,
     text: "Projects completed",
   },
   {

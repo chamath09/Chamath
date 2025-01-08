@@ -8,28 +8,27 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. iure veritatis.",
-    href: "",
+      "Creating dynamic, responsive websites with modern frameworks and technologies.",
+    href: "https://ai-travel-p-lanner.vercel.app/",
   },
   {
     num: "02",
-    title: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. iure veritatis.",
+    title: "Mobile Development",
+    description: "Building seamless mobile apps for iOS and Android platforms.",
     href: "",
   },
   {
     num: "03",
-    title: "Web Development",
+    title: "UI/UX",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. iure veritatis.",
+      "Designing intuitive, user-centered interfaces with a focus on usability.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "DevOps",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. iure veritatis.",
+      "Implementing efficient workflows, automation, and CI/CD pipelines for smooth deployments.",
     href: "",
   },
 ];
