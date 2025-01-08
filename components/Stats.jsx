@@ -57,68 +57,64 @@ const Stats = () => {
       </div>
       {/* Divider */}
       <div className="flex justify-center mt-12">
-  <div className="border-t border-accent opacity-50 animate-reversedWidth"></div>
-</div>
+        <div className="border-t border-accent opacity-50 animate-reversedWidth"></div>
+      </div>
 
-{/* Service Section */}
-<div className="mt-8">
-  <h2 className="text-4xl font-bold text-accent mb-6 text-center mt-2">
-    My Services
-  </h2>
-  <ServicePage />
-</div>
+      {/* Service Section */}
+      <div className="mt-8">
+        <h2 className="text-4xl font-bold text-accent mb-6 text-center mt-2">
+          My Services
+        </h2>
+        <ServicePage />
+      </div>
 
-<div className="mt-4 lg:mt-12">
-  <ResumePage />
-</div>
+      <div className="mt-4 lg:mt-12">
+        <ResumePage />
+      </div>
 
+      {/* Work Section */}
+      <div className="mt-4 lg:mt-8 ">
+        <div className="flex justify-center mb-4">
+          <div className="border-t border-accent opacity-50 animate-reversedWidth w-full"></div>
+        </div>
 
+        <h2 className="text-4xl font-bold text-accent mb-6 text-center ">
+          My Work
+        </h2>
+        <WorkPage />
+      </div>
 
+      {/* Divider */}
+      <div className="flex justify-center ">
+        <div className="border-t opacity-50 animate-reversedWidth"></div>
+      </div>
 
-{/* Work Section */}
-<div className="mt-6 lg:mt-8">
-  <h2 className="text-4xl font-bold text-accent mb-6 text-center ">
-    My Work
-  </h2>
-  <WorkPage />
-</div>
+      {/* Add a <style> tag for @keyframes */}
+      <style jsx>{`
+        @keyframes reversedWidth {
+          0% {
+            width: 50%;
+          }
+          50% {
+            width: 40%;
+          }
+          100% {
+            width: 30%;
+          }
+        }
 
-{/* Divider */}
-<div className="flex justify-center ">
-  <div className="border-t opacity-50 animate-reversedWidth"></div>
-</div>
+        .animate-reversedWidth {
+          animation: reversedWidth 5s infinite ease-in-out;
+        }
+      `}</style>
 
-{/* Add a <style> tag for @keyframes */}
-<style jsx>{`
-  @keyframes reversedWidth {
-    0% {
-      width: 50%;
-    }
-    50% {
-      width: 40%;
-    }
-    100% {
-      width: 30%;
-    }
-  }
-
-  .animate-reversedWidth {
-    animation: reversedWidth 5s infinite ease-in-out;
-  }
-`}</style>
-
-
-
-
-
-{/* Contact Section */}
-<div className="mt-8 mb-3">
-  <h2 className="text-4xl font-bold text-accent mb-6 text-center ">
-    Contact Me
-  </h2>
-  <ContactPage />
-</div>
-
+      {/* Contact Section */}
+      <div className="mt-8 mb-3">
+        <h2 className="text-4xl font-bold text-accent mb-6 text-center ">
+          Contact Me
+        </h2>
+        <ContactPage />
+      </div>
     </section>
   );
 };

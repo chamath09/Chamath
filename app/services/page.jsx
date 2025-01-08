@@ -22,14 +22,14 @@ const services = [
     title: "UI/UX",
     description:
       "Designing intuitive, user-centered interfaces with a focus on usability.",
-    href: "",
+    href: "https://www.figma.com/proto/NfpGGR5cvWInwo1INq1hMY/Assingment-04?node-id=1-2&p=f&t=2KLJB8ZsHv0SUMCn-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
   },
   {
     num: "04",
     title: "DevOps",
     description:
       "Implementing efficient workflows, automation, and CI/CD pipelines for smooth deployments.",
-    href: "",
+    href: "https://github.com/chamath09/Docker-jenkins.git",
   },
 ];
 

@@ -86,6 +86,11 @@ const experience = {
       position: "Backend Developer",
       duration: "2020-2021",
     },
+    {
+      company: "FOT-USJP",
+      position: "UI/UX Designer",
+      duration: "2023-2024",
+    },
 
   ],
 };
