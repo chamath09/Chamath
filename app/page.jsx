@@ -13,13 +13,7 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">
-              <img
-                src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=F7C730&width=600&lines=Software+Engineer;Web+Developer;DevOps+Engineer"
-                alt="Typing SVG"
-                className="mx-auto xl:mx-0 text-accent"
-              />
-            </span>
+            <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br />{" "}
               <span className="text-accent">ChaMaTH UpeKa</span>
