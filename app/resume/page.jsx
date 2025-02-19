@@ -27,7 +27,7 @@ import { BiLogoGoLang } from "react-icons/bi";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis laboriosam veniam eos quo.",
+    "I am a software engineering student with a focus on full-stack web development and DevOps. Passionate about building scalable and efficient digital solutions, I am dedicated to continuous learning and applying modern technologies to create impactful web applications.",
   info: [
     {
       fieldName: "Name",
@@ -99,7 +99,7 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis laboriosam veniam eos quo.",
+    "Building a strong foundation in software engineering, web development, and DevOps through continuous learning and hands-on experience.",
   items: [
     {
       institution: "FOT-USJP",
@@ -128,7 +128,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perspiciatis laboriosam veniam eos quo.",
+    "Technical expertise in software engineering, web development, and DevOps automation to build scalable and efficient solutions.",
   skillList: [
     {
       icon: <FaHtml5 />,
