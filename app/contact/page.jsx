@@ -47,14 +47,23 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+            >
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore nostrum natus nobis corrupti assumenda?
+                Feel free to reach out for collaborations, inquiries, or just to
+                connect. I’m always open to discussing exciting opportunities
+                and sharing knowledge!
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" name="firstname" placeholder="Firstname" />
+                <Input
+                  type="firstname"
+                  name="firstname"
+                  placeholder="Firstname"
+                />
                 <Input type="lastname" name="lastname" placeholder="Lastname" />
                 <Input type="email" name="email" placeholder="Email address" />
                 <Input type="phone" name="phone" placeholder="Phone number" />
@@ -67,14 +76,20 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="Web Development">Web Development</SelectItem>
+                    <SelectItem value="Web Development">
+                      Web Development
+                    </SelectItem>
                     <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
                     <SelectItem value="Logo Design">Logo Design</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
               {/* textarea  */}
-              <Textarea name="message" className="h-[200px]" placeholder="Type your message here" />
+              <Textarea
+                name="message"
+                className="h-[200px]"
+                placeholder="Type your message here"
+              />
               {/* btn */}
               <Button type="submit" size="md" className="max-w-40">
                 Send message
