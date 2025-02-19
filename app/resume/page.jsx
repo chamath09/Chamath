@@ -118,14 +118,24 @@ const education = {
       duration: "2022-2023",
     },
     {
-      institution: "Coursera",
-      degree: "Devops Engineer",
-      duration: "2022-present",
+      institution: "Kodekloud",
+      degree: "Kubernetes for Developers",
+      duration: "2025",
     },
     {
       institution: "University of Moratuwa",
       degree: "Python Programming",
       duration: "2022-2023",
+    },
+    {
+      institution: "Canonical",
+      degree: "Linux Administration",
+      duration: "2024",
+    },
+    {
+      institution: "Coursera",
+      degree: "Java",
+      duration: "2025-present",
     },
   ],
 };
