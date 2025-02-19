@@ -16,8 +16,14 @@ import {
   FaLinux,
   FaJenkins,
   FaJira,
+  FaJava,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiKubernetes,
+  SiSpringboot,
+} from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiMongodb, SiExpress, SiGooglecloud } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
@@ -143,6 +149,10 @@ const skills = {
       name: "javascript",
     },
     {
+      icon: <FaJava />,
+      name: "java",
+    },
+    {
       icon: <FaReact />,
       name: "react.js",
     },
@@ -191,10 +201,6 @@ const skills = {
       name: "Express.js",
     },
     {
-      icon: <SiMongodb />,
-      name: "MongoDB",
-    },
-    {
       icon: <SiGooglecloud />,
       name: "Google Cloud",
     },
@@ -225,6 +231,14 @@ const skills = {
     {
       icon: <FaJira />,
       name: "Jira",
+    },
+    {
+      icon: <SiKubernetes />,
+      name: "Kubernetes",
+    },
+    {
+      icon: <SiSpringboot />,
+      name: "Springboot",
     },
   ],
 };
