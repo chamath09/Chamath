@@ -93,9 +93,9 @@ const Work = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ 
+      animate={{
         opacity: 1,
-        transition: {delay: 2.4, duration: 0.4, ease: "easeIn"}
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
@@ -165,20 +165,52 @@ const Work = () => {
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {projects.map((project, index) => {
-                return <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
-                    {/* overplay */}
-                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                    {/* image */}
-                    <div className="relative w-full h-full rounded-lg">
-                      <Image src={project.image} fill className="object-cover" alt="images"/>
+              {projects.map((project, index) => (
+                <SwiperSlide key={index} className="w-full p-2">
+                  <div className="h-[460px] relative group overflow-hidden rounded-2xl shadow-2xl">
+                    {/* Animated gradient background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-accent/10 to-blue-500/20 animate-gradient-xy" />
+
+                    {/* Hover glow effect */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div className="absolute inset-0 bg-gradient-to-r from-accent/40 to-purple-600/40 blur-2xl" />
+                    </div>
+
+                    {/* Image container with hover effect */}
+                    <div className="relative w-full h-full rounded-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-700">
+                      {/* Overlay gradient */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500 z-10" />
+
+                      {/* Main image */}
+                      <Image
+                        src={project.image}
+                        fill
+                        className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        alt={project.title}
+                        quality={90}
+                      />
+
+                      {/* Project info overlay */}
+                      <div className="absolute bottom-0 left-0 right-0 p-8 z-20 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
+                        <h3 className="text-2xl font-bold text-white mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                          {project.title}
+                        </h3>
+                        <p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
+                          {project.category}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </SwiperSlide>;
-              })}
-              {/* slider buttons */}
-              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
+                </SwiperSlide>
+              ))}
+
+              {/* Enhanced slider buttons */}
+              <div className="absolute bottom-6 right-6 z-30 flex gap-3">
+                <WorkSliderBtns
+                  containerStyles="flex gap-3"
+                  btnStyles="bg-white/10 backdrop-blur-md hover:bg-accent/90 text-white w-12 h-12 rounded-full flex justify-center items-center transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                />
+              </div>
             </Swiper>
           </div>
         </div>

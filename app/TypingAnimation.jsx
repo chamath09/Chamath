@@ -38,7 +38,7 @@ const TypingAnimation = () => {
   }, [text, currentPhraseIndex, isTyping]);
 
   return (
-    <div className="w-full mb-4">
+    <div className="w-full mb-2">
       <div className="text-2xl font-mono text-yellow-400">
         {text}
         <span className="animate-pulse">|</span>
